@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <title>Hybrid Game Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <main id="main">
+     <h1> Hybrid Game tester</h1>
+        <h2> Hangman & Wheel of Fortune Cookies </h2>
+        <p> You have up to 10 guesses to solve the pop up puzzle! <br>
+        The theme is: James Cameron's single worded film. </p>
+        
+     <img src="https://wordwithoutenddotcom.files.wordpress.com/2015/01/wheel_fortune_cookie.jpg?w=542&h=365" alt="fortune cookies">
+        <div class="content-wrapper">
+            <p id="press-quote">Fortune Cookie quotes</p>
+            <input type="button" value="Refresh & Play Again!" onClick="location.href=location.href">
+        </div>
+        
+    </main>
+
+ <script>
+        var quotesArray = [
+            'You will find money under your couch or by selling your couch.',
+            'Do not neglect to feed the dog',
+            'You look great today',
+            'When it rains, sometimes an umbrella can be useful, othertimes it is not',
+            'Do not look for mistakes in places that you do not want to go to',
+            'A smile makes the world a brighter place and laughter makes it happy',
+            'Be the dragon you know you want to be',
+            'Play the lottery, $2 a dream, very cheap deal',
+            'Do not spend more money than you have, except on yourself. Always spend money on yourself.',
+            'Live today like there is no tomorrow',
+            'Remember the past but do not neglect planning for the future'
+        ];
+        var randomNumber = Math.floor(Math.random() * quotesArray.length);
+        document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+
+    </script>
+
+
+<script src="game.js" defer></script>
+
+</body>
+</html>

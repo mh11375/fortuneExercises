@@ -1,0 +1,26 @@
+body {
+    margin: none;
+    padding: none;
+    display: block;
+    font-family: 'Passion One', cursive;
+    outline: 7px outset rgba(28,110,164,0.41);
+    outline-offset: 0px;
+}
+
+* {
+        font-family: 'Passion One', cursive;
+        text-align: center;
+        background-image: cover;
+        background-repeat: none;
+        background-color: #ffffcc;
+        
+}
+
+main {
+    margin-top: 200px;
+}
+
+p {
+    background-color: #62FFAB;
+    padding: 10px;
+}
